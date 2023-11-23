@@ -1,0 +1,15 @@
+<div class="">
+  What’s your next destination?
+  <div class="w-full">
+    <app-search></app-search>
+  </div>
+  <div class="flex justify-center">
+    <div class="grid grid-cols-4 gap-6">
+      <ng-container *ngFor="let hotel of hotels">
+        <div class="col-span-1">
+          <app-hotel-card></app-hotel-card>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
